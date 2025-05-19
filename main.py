@@ -20,7 +20,7 @@ def get_player_name(player_data):
     return full_name if full_name else f"Unnamed Player {player_data['id']}"
 
 def main():
-    token = "cc3fa7b16889cb00bd32ecb2ca5dfad74b9b26fdafdbfa794b93a6b9437667e9"
+    token = input("Введите ваш токен: ").strip()
     headers = {'Authorization': token}
     base_url = "https://lksh-enter.ru"
 
